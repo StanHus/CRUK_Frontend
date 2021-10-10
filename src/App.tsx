@@ -2,17 +2,15 @@ import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Posts from "./components/Forum/Main_page";
 import Help from "./components/Help/Main_Page";
 import Quiz from "./components/Main Page/Quiz";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        {/* <Header /> */}
+        <Header />
         <nav>
-          {/* {state && 
-                  <button className="switchButton">
-                  <Link onClick={() => setState(false)} className = "navlink" to="/progress">Exercises</Link>
-              </button>} */}
           <button className="switchButton">
             <Link className="navlink" to="/">
               Main Page
@@ -33,7 +31,6 @@ function App() {
           <Switch>
             <Route exact path="/">
               <div>
-                <h1>Play your part in beating cancer</h1>
                 <Quiz />
               </div>
             </Route>
@@ -49,6 +46,7 @@ function App() {
             </Route>
           </Switch>
         </main>
+        <Footer />
       </BrowserRouter>
     </div>
   );
