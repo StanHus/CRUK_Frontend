@@ -29,16 +29,6 @@ export default function Help() {
         <button
           className="helpOption"
           onClick={() =>
-            window.open(
-              "https://www.cancerresearchuk.org/get-involved/leave-a-legacy-gift-in-your-will"
-            )
-          }
-        >
-          Leave a legacy gift in your Will
-        </button>
-        <button
-          className="helpOption"
-          onClick={() =>
             window.open("https://www.cancerresearchuk.org/get-involved/donate")
           }
         >
