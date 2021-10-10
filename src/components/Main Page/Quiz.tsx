@@ -56,9 +56,10 @@ export default function Quiz() {
   return (
     <Fragment>
       <h3 className="subheading">
-        Cancer is a one of the deadliest diseases in human history, and yet we
-        haven't conquered it yet, but we are trying our best. Learn more about
-        it by compelting the following quiz:
+        Cancer is one of the deadliest diseases in human history, however the
+        cure has not been developed yet. We are doing all we can to make it happen. 
+        
+        Learn more about cancer by compelting the following quiz:
       </h3>
       <div className="quiz">
         <h4 className="quizQuestion">

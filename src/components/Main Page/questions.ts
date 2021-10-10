@@ -1,6 +1,6 @@
 const questions = [
   {
-    questionText: "How many people contract cancer in their life?",
+    questionText: "How many people get cancer in their life?",
     answerOptions: [
       {
         answerText: "1 in 2",
