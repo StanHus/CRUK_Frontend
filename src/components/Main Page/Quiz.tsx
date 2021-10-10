@@ -19,12 +19,25 @@ export default function Quiz() {
     setAnswered(false);
   };
 
+  const HowCanIHelp = () => {
+    return (
+      <Fragment>
+        <h4>How Can I help?</h4>
+      </Fragment>
+    );
+  };
+
   const Response = () => {
     return (
       <div>
         <h4>{feedback}</h4>
         <h4>You got {points} right!</h4>
-        <button onClick={NextQuestion}>Next Question</button>
+        {questionNumber < 4 && (
+          <button onClick={NextQuestion}>Next Question</button>
+        )}
+        {questionNumber === 4 && (
+          <button onClick={HowCanIHelp}>How Can I Help?</button>
+        )}
       </div>
     );
   };
