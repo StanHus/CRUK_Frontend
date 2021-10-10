@@ -70,7 +70,7 @@ const questions = [
   },
   {
     questionText:
-      "Cancer can get anyone, even childer. Which of the children mortality rates from cancer is true, do you think?",
+      "Cancer can get anyone, even childen. Which of the child mortality rates from cancer is true, do you think?",
     answerOptions: [
       {
         answerText: "2%",
