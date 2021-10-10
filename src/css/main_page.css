@@ -1,3 +1,57 @@
 body {
   margin: 0;
 }
+
+.switchButton {
+  text-align: center;
+  padding: 1%;
+  background-color: #0300b8;
+  color: rgb(0, 69, 173);
+  margin-left: 5%;
+}
+
+.allSwitchButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+
+.navlink {
+  color: white;
+  font-size: medium;
+}
+
+.quiz {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid;
+}
+
+.subheading {
+  margin-top: 6%;
+  text-align: center;
+}
+
+.quizQuestion {
+  margin-left: 5%;
+}
+
+.quizOptions {
+  padding: 1%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.answerButton {
+  background-color: #0300b8;
+  color: white;
+}
+
+.functionButton {
+  background-color: #0300b8;
+  color: white;
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+}

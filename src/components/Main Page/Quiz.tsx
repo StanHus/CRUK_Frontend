@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { IAnswerOption } from "../interfaces";
 import { questions } from "./questions";
-import "../../css/main_page.css"
+import "../../css/main_page.css";
 
 export default function Quiz() {
   const [points, setPoints] = useState(0);
@@ -26,16 +26,26 @@ export default function Quiz() {
 
   const Response = () => {
     return (
-      <div>
+      <div className="quizOptions">
         <h4>{feedback}</h4>
         <h4>
-          You got {points}/{questionNumber + 1} right!
+          You got {points}/{questionNumber + 1} right
         </h4>
         {questionNumber < 4 && (
           <button onClick={NextQuestion}>Next Question</button>
         )}
         {questionNumber === 4 && (
-          <button onClick={HowCanIHelp}>How Can I Help?</button>
+          <div className="quizOptions">
+            <button className="functionButton" onClick={HowCanIHelp}>
+              How Can I Help?
+            </button>
+            <button
+              className="functionButton"
+              onClick={() => (window.location.href = "/")}
+            >
+              Try the Quiz again
+            </button>
+          </div>
         )}
       </div>
     );
@@ -43,14 +53,17 @@ export default function Quiz() {
 
   return (
     <Fragment>
-      <h2>Test Your Knowledge on Cancer</h2>
-      <div>
-        <h4>{questions[questionNumber].questionText}</h4>
+      <h2 className="subheading">Test Your Knowledge on Cancer</h2>
+      <div className="quiz">
+        <h4 className="quizQuestion">
+          {questions[questionNumber].questionText}
+        </h4>
         {!answered &&
           questions[questionNumber].answerOptions.map(
             (answerOption: IAnswerOption) => (
-              <div>
+              <div className="quizOptions">
                 <button
+                  className="answerButton"
                   onClick={() =>
                     ProcessAnswer(answerOption.feedback, answerOption.isCorrect)
                   }
