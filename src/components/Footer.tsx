@@ -2,7 +2,7 @@ import "../css/headerFooter.css";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="footer">
       <h5 className="footerText">
         Thanks for visiting, follow us on{" "}
         <a href="https://www.instagram.com/cr_uk/?hl=en">Instagram</a>,{" "}

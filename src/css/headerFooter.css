@@ -4,6 +4,7 @@ body {
 
 .footerText {
   text-align: center;
+  padding: 2%;
 }
 
 .headerAllComponenets {
@@ -11,6 +12,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 5%;
+  background-color: rgb(185, 185, 185);
 }
 
 .entry {
@@ -24,4 +26,8 @@ body {
   margin-left: 2%;
   text-align: center;
   font-size: x-large;
+}
+
+.footer {
+  background-color: rgb(185, 185, 185);
 }

@@ -32,7 +32,9 @@ export default function Quiz() {
           You got {points}/{questionNumber + 1} right
         </h4>
         {questionNumber < 4 && (
-          <button onClick={NextQuestion}>Next Question</button>
+          <button className="answerButton" onClick={NextQuestion}>
+            Next Question
+          </button>
         )}
         {questionNumber === 4 && (
           <div className="quizOptions">

@@ -46,6 +46,8 @@ body {
 .answerButton {
   background-color: #0300b8;
   color: white;
+  padding: 1%;
+  width: 40%;
 }
 
 .functionButton {
