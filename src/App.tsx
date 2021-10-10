@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Posts from "./components/Forum/Main_page";
-import Help from "./components/Help/Main_Page";
+import Help from "./components/Help/Main_Page_help";
 import Quiz from "./components/Main Page/Quiz";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -10,7 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        <nav>
+        <nav className="allSwitchButtons">
           <button className="switchButton">
             <Link className="navlink" to="/">
               Main Page
@@ -23,7 +23,7 @@ function App() {
           </button>
           <button className="switchButton">
             <Link className="navlink" to="/help">
-              How Can I Help
+              How Can I Help?
             </Link>
           </button>
         </nav>

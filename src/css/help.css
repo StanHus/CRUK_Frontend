@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.helpMessage {
+  text-align: center;
+}
+
+.helpOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.helpOption {
+  padding: 1%;
+  margin-top: 2.2%;
+}
