@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import { IAnswerOption } from "../interfaces";
 import { questions } from "./questions";
+import "../../css/main_page.css"
 
 export default function Quiz() {
   const [points, setPoints] = useState(0);
