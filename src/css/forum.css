@@ -8,8 +8,9 @@ body {
   font-size: auto;
   color: white;
   background-color: #7d8491;
-  padding: 0.3%;
   margin-left: 5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
   width: 90%;
   display: grid;
   text-align: center;
