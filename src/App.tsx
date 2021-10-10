@@ -1,5 +1,6 @@
 import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Posts from "./components/Forum/Main_page";
+import Help from "./components/Help/Main_Page";
 import Quiz from "./components/Main Page/Quiz";
 
 function App() {
@@ -22,23 +23,28 @@ function App() {
               Forum
             </Link>
           </button>
+          <button className="switchButton">
+            <Link className="navlink" to="/help">
+              How Can I Help
+            </Link>
+          </button>
         </nav>
         <main>
           <Switch>
             <Route exact path="/">
               <div>
                 <h1>Play your part in beating cancer</h1>
-                <h2>
-                  My-my, look at you, visiting this website. Do you know that
-                  just by clicking the link and getting here, you already done
-                  more than 90% of people? Thats true! Thank you for that!
-                </h2>
                 <Quiz />
               </div>
             </Route>
             <Route exact path="/forum">
               <section>
                 <Posts />
+              </section>
+            </Route>
+            <Route exact path="/help">
+              <section>
+                <Help />
               </section>
             </Route>
           </Switch>

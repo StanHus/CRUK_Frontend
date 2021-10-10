@@ -20,18 +20,16 @@ export default function Quiz() {
   };
 
   const HowCanIHelp = () => {
-    return (
-      <Fragment>
-        <h4>How Can I help?</h4>
-      </Fragment>
-    );
+    window.location.href = "/help";
   };
 
   const Response = () => {
     return (
       <div>
         <h4>{feedback}</h4>
-        <h4>You got {points} right!</h4>
+        <h4>
+          You got {points}/{questionNumber + 1} right!
+        </h4>
         {questionNumber < 4 && (
           <button onClick={NextQuestion}>Next Question</button>
         )}
