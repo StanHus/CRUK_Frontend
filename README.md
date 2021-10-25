@@ -1,8 +1,8 @@
-# Hi all, this is my full-stack (React (ts) + postgres-backend)
+# Hi all, this is my full-stack (React (ts) + postgres-backend) completed in 8 hours (so basically a demo of what I can do)
 
-## Loom video: https://www.loom.com/share/fd27bb1b02ef4f488fdd627d18b65539
+#### Loom video: https://www.loom.com/share/fd27bb1b02ef4f488fdd627d18b65539
 
-## Best feature hands down is that the app's css is highly optimised for mobile, as it is the 18-24 demographic's preferred means of exploration.
+### Best feature hands down is that the app's css is highly optimised for mobile, as it is the 18-24 demographic's preferred means of exploration.
 
 ## Other Notable Features:
 - Clear file tree
